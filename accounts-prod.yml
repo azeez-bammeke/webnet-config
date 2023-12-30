@@ -1,12 +1,32 @@
-build:
-  version: "2.5-account-prod"
+spring:
+  application:
+    name: "accounts"
+  datasource:
+    url: jdbc:mysql://10.0.0.32:3306/accounts
+    username: docker
+    password: docker
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
 
 accounts:
-  message: "Welcome to WbeNet Inc."
+  message: "Welcome to WbeNet Inc. Account Prod"
   contactDetails:
     name: "Gary Pay-Rent: Store Manager"
-    email: "{cipher}d8a807ff027a92f66a8d821ca6beb9ba0b6da39c39bef8c51d23228e3008afe1c210f5cb451076984e920bf06eb7ea66"
+    email: "gary-pay-rent@gmail.com"
   onCallSupport:
     - (555)666-1234
     - (555)666-1234
     - (555)666-1234
+
+build:
+  version: "2.5-account-prod"
