@@ -18,7 +18,7 @@ springdoc:
     path: /swagger-ui.html
 
 cards:
-  message: "Welcome to WbeNet Inc. Cards Prod"
+  message: "Welcome to WbeNet Inc. Cards Production is updated"
   contactDetails:
     name: "Gary Pay-Rent: Store Manager"
     email: "gary-pay-rent@gmail.com"
