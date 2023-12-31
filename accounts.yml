@@ -18,7 +18,7 @@ springdoc:
     path: /swagger-ui.html
 
 accounts:
-  message: "Welcome to WbeNet Inc. Account local"
+  message: "Welcome to WbeNet Inc. Account local -show update"
   contactDetails:
     name: "Gary Pay-Rent: Store Manager"
     email: "gary-pay-rent@gmail.com"
