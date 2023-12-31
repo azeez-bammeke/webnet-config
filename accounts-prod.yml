@@ -19,7 +19,7 @@ springdoc:
 
 
 accounts:
-  message: "Welcome to WbeNet Inc. Account Prod"
+  message: "Welcome to WbeNet Inc. Account Production for testing web hook"
   contactDetails:
     name: "Gary Pay-Rent: Store Manager"
     email: "gary-pay-rent@gmail.com"
