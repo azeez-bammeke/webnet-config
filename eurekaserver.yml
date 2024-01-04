@@ -5,6 +5,21 @@ spring:
   application:
     name: "eurekaserver"
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include:  "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
 eureka:
   instance:
     hostname: localhost
@@ -12,4 +27,6 @@ eureka:
     fetch-registry: false
     register-with-eureka: false
     service-url:
-      defaultzone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+
