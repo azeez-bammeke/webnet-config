@@ -22,6 +22,12 @@ management:
     shutdown:
       enabled: true
 
+logging:
+  level:
+    com:
+      webnet:
+        accounts: DEBUG
+
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
