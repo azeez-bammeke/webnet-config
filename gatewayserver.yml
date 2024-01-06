@@ -1,13 +1,10 @@
-server:
-  port: 8072
-
 spring:
   cloud:
     gateway:
       discovery:
         locator:
           enabled: true
-#          lower-case-service-id: true
+          lower-case-service-id: true
 
 eureka:
   instance:
@@ -25,6 +22,9 @@ management:
         include:  "*"
   endpoint:
     gateway:
+      enabled: true
+  info:
+    env:
       enabled: true
 
 
