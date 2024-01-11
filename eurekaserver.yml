@@ -1,6 +1,9 @@
 server:
   port: 8070
 
+spring:
+  application:
+    name: "eurekaserver"
 management:
   endpoints:
     web:
