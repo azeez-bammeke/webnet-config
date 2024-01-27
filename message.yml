@@ -6,10 +6,10 @@ spring:
       definition: email|sms
     stream:
       bindings:
-        email|sms-in-0:
+        emailsms-in-0:
           destination: send-communication
           group: ${spring.application.name}
-        email|sms-out-0:
+        emailsms-out-0:
           destination: communication-sent
       kafka:
         binder:
