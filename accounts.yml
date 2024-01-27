@@ -25,7 +25,7 @@ spring:
       kafka:
         binder:
           brokers:
-            - localhost:9092
+            - localhost:29092
 #   ToDo - Replaced rabbit mq config with kafka
 #  rabbitmq:
 #    host: localhost
